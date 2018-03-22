@@ -1,0 +1,38 @@
+@charset="utf-8";
+body {
+    padding: 0px 50px;
+}
+a {
+    color:#333;
+    text-decoration: none;
+}
+dt {
+    font: bolder 20px/30px "微软雅黑";
+}
+
+dd {
+    font: 18px/25px "微软雅黑";
+}
+
+dd:before {
+    content: "● ";
+}
+
+.emergency{
+	color:#f00;
+	text-decoration: blink;
+}
+
+.finish:after {
+    content: " ✔ ";
+    color: #f00;
+}
+
+.finish {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.delete {
+    text-decoration: line-through;
+}

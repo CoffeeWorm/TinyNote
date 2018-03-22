@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html,charset='utf-8'">
+    <meta name="author" content="CoffeeWorm, coffee_worm@163.com" />
+    <meta name="keywords" content="便签" />
+    <title>Tiny Note</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/background.css">
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!-- 登陆以及功能栏 -->
+    <nav class="nav">
+        <div class="logo">Tiny Note</div>
+        <ul class="user">
+            <li class="lst"><a href="javascript:;">User ID</a></li>
+            <li class="lst"><a href="javascript:;">Settings</a></li>
+            <li class="lst"><a href="javascript:;">More</a></li>
+        </ul>
+        <ul class="settings-menu">
+        </ul>
+        <ul class="more-menu">
+            <li class="lst"><a href="updateLog.html">更新日志</a></li>
+            <hr>
+            <li class="lst"><a href="productRequirements.html">需求日志</a></li>
+            <hr>
+            <li class="lst"><a href="bugReport.html">BUG日志</a></li>
+        </ul>
+    </nav>
+    <div class="tools">
+    </div>
+    <!-- 便签本身应有多个 -->
+    <div class="main-content">
+        <!-- 便签容器 -->
+        <ul class="m-note-container">
+            <!-- <li class="note">
+				<div class="info">
+					<div class="del-btn"></div>
+					<div class="title markedness" contenteditable="true"><span class="default-info">Please input title here.</span></div>
+					<div class="time">
+						<span class="markedness">Editing time: </span>
+						<span class="editing-time"></span>
+					</div>
+					<div class="arrow">
+						<a class="oc-btn" href="javascript:;" title="展开/收起">▼</a>
+					</div>
+				</div>
+				<hr class="split-line" />
+				<div class="content" contenteditable="true"><span class="default-info markedness">Please input content here.</span></div>
+			</li> -->
+        </ul>
+    </div>
+    <!-- 右下角随动功能 -->
+    <aside class="m-aside-tools">
+        <ul class="func-tools">
+            <li class="lst back-top" title="返回顶端"></li>
+            <li class="lst add-btn" title="添加便签"></li>
+            <li class="lst packAll" title="全部收起"></li>
+            <li class="lst unpackAll" title="全部展开"></li>
+        </ul>
+    </aside>
+    <!-- 版权等信息 -->
+    <footer class="copyright-info">
+        <p class="cp-info">CoffeeWorm&copy; <span style="font: 12px/20px Arial;color:#ddd;">本便签现处于测试阶段，不保证数据安全。</span></p>
+    </footer>
+    <canvas id="bg" width="200px" height="100px"></canvas>
+    <script src="js/json2.js"></script>
+    <script src="js/assign.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
