@@ -127,7 +127,7 @@ app.notesArray = new Array();
     function Note(options) {
         options = options || {};
 
-        this.timer = Date.now();
+        this.timer = options.time || Date.now();
         this.status = options.status || 'unpacked';
 
         var tag = document.createElement('li');
@@ -137,7 +137,7 @@ app.notesArray = new Array();
         $('.m-note-container').insertBefore(tag, $('.m-note-container').firstChild);
         $('.title', tag).innerHTML = options.title || util.tpl.titleTipTpl;
         $('.content', tag).innerHTML = options.content || util.tpl.contentTipTpl;
-        $('.editing-time', tag).innerHTML = util.getTime(options.time || this.timer);
+        $('.editing-time', tag).innerHTML = util.getTime(this.timer);
         this.tag= tag;
         this.addEvent();
 
